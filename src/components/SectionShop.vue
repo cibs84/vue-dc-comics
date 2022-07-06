@@ -1,42 +1,12 @@
 <template>
-    <section class="shop">
-        <div class="container">
+    <section class=shop>
+        <div class=container>
             <!-- Shop List -->
             <ul>
-                <!-- <li v-for="listItem, index in shopListItems" :key="index">
-                    <a :href="listItem.url">
-                        <img :src="`../assets/img/${listItem.image}`" alt="">
-                        <span class="text">{{listItem.text}}</span>
-                    </a>
-                </li> -->
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                        <span class="text">Digital Comics</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                        <span class="text">DC Merchandise</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                        <span class="text">Subscription</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                        <span class="text">Comic Shop Locator</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                        <span class="text">DC Power Visa</span>
+                <li v-for="(listItem, index) in shopListItems" :key=index>
+                    <a :href=listItem.url>
+                        <img :src="listItem.image" />
+                        <span class=text>{{listItem.text}}</span>
                     </a>
                 </li>
             </ul>
@@ -53,27 +23,27 @@ export default {
             shopListItems: [
                 {
                     text: 'Digital Comics',
-                    image: 'buy-comics-digital-comics.png',
+                    image: require('../assets/img/buy-comics-digital-comics.png'),
                     url: '#'
                 },
                 {
                     text: 'DC Merchandise',
-                    image: 'buy-comics-merchandise.png',
+                    image: require('../assets/img/buy-comics-merchandise.png'),
                     url: '#'
                 },
                 {
                     text: 'Subscription',
-                    image: 'buy-comics-subscriptions.png',
+                    image: require('../assets/img/buy-comics-subscriptions.png'),
                     url: '#'
                 },
                 {
                     text: 'Comic Shop Locator',
-                    image: 'buy-comics-shop-locator.png',
+                    image: require('../assets/img/buy-comics-shop-locator.png'),
                     url: '#'
                 },
                 {
                     text: 'DC Power Visa',
-                    image: 'buy-dc-power-visa.svg',
+                    image: require('../assets/img/buy-dc-power-visa.svg'),
                     url: '#'
                 },
             ]
@@ -83,7 +53,7 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
+<style lang=scss scoped>
 @import '../styles/variables';
 
 section {
