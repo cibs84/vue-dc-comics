@@ -9,17 +9,23 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone. -->
 <template>
   <div id="app">
     <MyHeader/>
+
+    <main>
+      <SectionMainContent/>
+    </main>
   </div>
 </template>
 
 
 <script>
 import MyHeader from './components/MyHeader.vue';
+import SectionMainContent from './components/SectionMainContent.vue';
 
 export default {
   name: 'App',
   components: {
-    MyHeader
+    MyHeader,
+    SectionMainContent
   }
 }
 </script>
