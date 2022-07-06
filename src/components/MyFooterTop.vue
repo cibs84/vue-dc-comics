@@ -58,9 +58,6 @@
                     <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved. <a href="#">Cookies Settings</a></p>
                 </div>
             </div>
-
-            <!-- Logo DC -->
-            <!-- <img src="../assets/img/dc-logo-bg.png" alt="logo DC"> -->
         </div>
     </footer>
 </template>
@@ -68,7 +65,7 @@
 
 <script>
 export default {
-    name: 'MyFooter'
+    name: 'MyFooterTop'
 }
 </script>
 
@@ -92,6 +89,7 @@ footer {
                 display: flex;
                 flex-wrap: wrap;
                 width: 50%;
+                min-width: 40rem;
 
                 .col {
                 margin-right: 2rem;

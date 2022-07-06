@@ -15,7 +15,8 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone. -->
       <SectionShop/>
     </main>
 
-    <MyFooter/>
+    <MyFooterTop/>
+    <MyFooterBottom/>
   </div>
 </template>
 
@@ -24,7 +25,8 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone. -->
 import MyHeader from './components/MyHeader.vue';
 import SectionMainContent from './components/SectionMainContent.vue';
 import SectionShop from './components/SectionShop.vue';
-import MyFooter from './components/MyFooter.vue';
+import MyFooterTop from './components/MyFooterTop.vue';
+import MyFooterBottom from './components/MyFooterBottom.vue';
 
 export default {
   name: 'App',
@@ -32,7 +34,8 @@ export default {
     MyHeader,
     SectionMainContent,
     SectionShop,
-    MyFooter
+    MyFooterTop,
+    MyFooterBottom
   }
 }
 </script>

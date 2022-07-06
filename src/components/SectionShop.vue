@@ -16,7 +16,6 @@
                     </a>
                 </li>
                 <li>
-                <li>
                     <a href="#">
                         <img src="../assets/img/buy-comics-merchandise.png" alt="">
                         <span class="text">DC Merchandise</span>
@@ -93,7 +92,7 @@ section {
 
     ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
 
