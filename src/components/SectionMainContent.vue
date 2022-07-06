@@ -21,7 +21,7 @@ section {
     background-color: black;
 
     .place-holder {
-        font-size: 1rem;
+        font-size: 1.9rem;
         color: white;
         font-weight: 600;
     }

@@ -12,6 +12,7 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone. -->
 
     <main>
       <SectionMainContent/>
+      <SectionShop/>
     </main>
   </div>
 </template>
@@ -20,12 +21,14 @@ Creare un componente aggiuntivo per gestire la fascia azzurra con le icone. -->
 <script>
 import MyHeader from './components/MyHeader.vue';
 import SectionMainContent from './components/SectionMainContent.vue';
+import SectionShop from './components/SectionShop.vue';
 
 export default {
   name: 'App',
   components: {
     MyHeader,
-    SectionMainContent
+    SectionMainContent,
+    SectionShop
   }
 }
 </script>

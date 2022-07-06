@@ -92,6 +92,7 @@ header {
 
     .logo {
         width: 5rem;
+        flex-shrink: 0;
     }
     .main-menu {
         display: flex;
