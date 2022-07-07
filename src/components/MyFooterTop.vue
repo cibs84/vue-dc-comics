@@ -76,20 +76,24 @@ export default {
 footer {
     
     .footer-top {
-        background-image: url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg);
-        background-size: auto, cover;
-        background-position: center right, center;
+        background-image: url(../assets/img/footer-bg.jpg);
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        padding: 3rem 0;
         color: $brand_tertiary_color;
         
         .container {
+            background-image: url(../assets/img/dc-logo-bg.png);
+            background-size: auto;
+            background-position: center right;
+            background-repeat: no-repeat;
 
             .row {
                 display: flex;
                 flex-wrap: wrap;
                 width: 50%;
                 min-width: 40rem;
+                padding: 3rem 0;
 
                 .col {
                 margin-right: 2rem;

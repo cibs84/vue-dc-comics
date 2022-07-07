@@ -11,7 +11,8 @@
         <nav>
             <ul class="main-menu">
                 <li v-for='link, index in menuLinks' :key="index">
-                    <a :href="link.url" :class="{ 'current': link.current }">{{link.text}}</a>
+                    <!-- <a :href="link.url" :class="{ 'current': link.current }">{{link.text}}</a> -->
+                    <a :href="link.url" :class="{ 'current': index === menuItemActive }" @click="setActiveMenuItem(index)">{{link.text}}</a>
                 </li> 
             </ul>
         </nav>
@@ -24,58 +25,54 @@ export default {
     name: 'MyHeader',
     data() {
         return {
+            menuItemActive: 0,
             menuLinks: [
                 {
                     text: 'Characters',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'Comics',
                     url: '#',
-                    current: true
                 },
                 {
                     text: 'Movies',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'Tv',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'Games',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'Collectibles',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'Videos',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'Fans',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'News',
                     url: '#',
-                    current: false
                 },
                 {
                     text: 'Shop',
                     url: '#',
-                    current: false
                 }
             ]
+        }
+    },
+    methods: {
+        setActiveMenuItem(index) {
+            this.menuItemActive = index;
         }
     }
 }
