@@ -47,7 +47,7 @@ section {
         .category-label {
             position: absolute;
             top: -4.7rem;
-            left: -1rem;
+            left: 0;
             padding: 0.6rem 2rem;
             text-transform: uppercase;
             color: #fff;

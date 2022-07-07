@@ -1,7 +1,9 @@
 <template>
-    <div class="product-card">
-        <img :src="productDetails.thumb" :alt="productDetails.series">
-        <h3 class="series">{{productDetails.series}}</h3>
+    <div class="col">
+        <div class="product-card">
+            <img :src="productDetails.thumb" :alt="productDetails.series">
+            <h3 class="series">{{productDetails.series}}</h3>
+        </div>
     </div>
 </template>
 
@@ -19,24 +21,30 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/variables';
 
-.product-card {
-    width: calc((100% / 6) - 1.5rem);
-    margin-bottom: 3rem;
-    cursor: pointer;
+.col {
+    width: calc(100% / 6);
+    padding: 0 0.75rem;
 
-    img {
-        object-fit: cover;
-        object-position: top center;
-        width: 100%;
-        height: 11.3rem;
-        margin-bottom: 1rem;
-    }
-    .series {
-        color: white;
-        font-size: 0.9rem;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+    .product-card {
+        cursor: pointer;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        img {
+            object-fit: cover;
+            object-position: top center;
+            max-height: 10rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .series {
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: left;
+        }
+}
 }
 
 </style>
