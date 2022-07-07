@@ -47,7 +47,7 @@
 
                         <ul>
                             <li><a href="#">DC</a></li>
-                            <li><a href="#">DC UNIVERSE INFINITE</a></li>
+                            <li><a href="#">DC Universe Infinite</a></li>
                             <li><a href="#">DC Kids</a></li>
                             <li><a href="#">DC Shop</a></li>
                             <li><a href="#">MAD Magazine</a></li>

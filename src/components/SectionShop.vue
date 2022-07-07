@@ -68,7 +68,8 @@ section {
 
     img {
         vertical-align: middle;
-        width: 2.5rem;
+        height: 3rem;
+        max-width: 3.2rem;
         margin-right: 1rem;    
     }
     .text {
